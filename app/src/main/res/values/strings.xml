@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">rv_1203</string>
+    <string name="salute">Buenas tardes</string>
+    <string name="bienvenida">Bienvenido</string>
+
+    <string name="usuario_rep">Nombre de usuario</string>
+    <string name="nombre_usuario">Nombre completo</string>
+    <string name="correo_usuario">Correo Institucional</string>
+    <string name="titulo_aru">Registro de usuario</string>
+    <string name="clave_usuario">Clave</string>
+    <string name="confirmar_reg">Confirmar registro</string>
+
+    <string name="titulo_aro">Reportar objeto perdido</string>
+    <string name="nombreObj_aro">Nombre Objeto</string>
+    <string name="lugar_aro">Lugar</string>
+    <string name="lugar">Lugar</string>
+    <string name="fecha_rep_aro">Fecha</string>
+    <string name="detalles_rep_aro">Detalles adicionales</string>
+    <string name="images_aro">Agregar imagenes...</string>
+    <string name="confirmar_rop">Confirmar</string>
+    <string name="agregar_imagenes">Añadir imagenes</string>
+
+    <string name="titulo_menu_reportes">Reportar objeto</string>
+    <string name="perdido">Perdido</string>
+    <string name="encontrado">Encontrado</string>
+
+    <string name="titulo_archivo_reportes">Reportes del usuario</string>
+    <string name="perdidos">Objetos Perdidos</string>
+    <string name="encontrados">Objetos Encontrados</string>
+
+    <string name="title_login">Inicio de sesión</string>
+    <string name="login">Ingresar</string>
+    <string name="signin">Si no tienes cuenta, <a href=""><b>registrate.</b></a></string>
+    <string name="volver_a_inicio">Ya tengo cuenta, <a href=""><b>volver al inicio</b></a></string>
+
+
+</resources>

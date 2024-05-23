@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "652899104808",
+    "firebase_url": "https://rv-1203-default-rtdb.firebaseio.com",
+    "project_id": "rv-1203",
+    "storage_bucket": "rv-1203.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652899104808:android:ecc4e0c2de66cfcbc3dd1d",
+        "android_client_info": {
+          "package_name": "com.example.realtimecrudadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHnkZISK62hHj_kyxm0icTUn2vfWdGe1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652899104808:android:dad7b6e76b7252f1c3dd1d",
+        "android_client_info": {
+          "package_name": "com.example.rv_1203"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHnkZISK62hHj_kyxm0icTUn2vfWdGe1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

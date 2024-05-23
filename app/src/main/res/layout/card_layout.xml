@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    card_view:cardBackgroundColor="@color/gris"
+    card_view:cardCornerRadius="15dp"
+    card_view:contentPadding="4dp"
+    card_view:cardElevation="6dp"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/item_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Imagen de Objeto"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombreObj_aro"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/item_title"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/item_image"
+            android:layout_alignParentTop="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fecha_cvp"
+            android:text="Fecha: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_below="@id/item_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_rep_aro"
+            android:textColor="@color/black"
+            android:id="@+id/item_cvp_fecha"
+            android:textStyle="italic"
+            android:layout_toEndOf="@+id/fecha_cvp"
+            android:layout_below="@+id/item_title"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lugar: "
+            android:id="@+id/lugar_cvp"
+            android:layout_below="@+id/item_cvp_fecha"
+            android:layout_toEndOf="@id/item_image"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lugar"
+            android:id="@+id/item_cvp_lugar"
+            android:layout_below="@id/item_cvp_fecha"
+            android:layout_toEndOf="@id/lugar_cvp"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

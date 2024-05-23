@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_cielito"
+    tools:context="com.example.UploadOP"
+    android:paddingEnd="20dp">
+
+    <TextView
+        android:id="@+id/titulo_reg_obj_per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/titulo_aro"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/lightblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/edittext_nombre_obj_per"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/blue_border"
+        android:inputType="text"
+        android:hint="Nombre del objeto"
+        android:textColorHint="@color/black"
+        android:paddingStart="9dp"
+        android:textSize="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_reg_obj_per"
+        android:layout_marginTop="25dp"/>
+
+
+    <EditText
+        android:id="@+id/edittext_lugar_obj_per"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_border"
+        android:hint="Ubicación aproximada"
+        android:inputType="text"
+        android:layout_marginStart="20dp"
+        android:paddingStart="9dp"
+        android:textSize="19sp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/edittext_nombre_obj_per"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_nombre_obj_per" />
+
+
+
+    <EditText
+        android:id="@+id/edittext_detalles_obj_per"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/blue_border"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:paddingStart="9dp"
+        android:hint="Detalles adicionales..."
+        app:layout_constraintTop_toBottomOf="@+id/edittext_lugar_obj_per"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/select_fecha_upd_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFechaROP"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/edittext_detalles_obj_per"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_detalles_obj_per"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:text="Seleccionar fecha"
+        android:backgroundTint="@color/grison"
+        />
+
+    <TextView
+        android:id="@+id/textView_fecha_upd_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Fecha: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/select_fecha_upd_op"
+        app:layout_constraintTop_toBottomOf="@+id/select_fecha_upd_op" />
+
+    <TextView
+        android:id="@+id/textView_fecha_s_upd_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView_fecha_upd_op"
+        app:layout_constraintTop_toBottomOf="@+id/select_fecha_upd_op" />
+
+    <Button
+        android:id="@+id/add_img_arop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-220dp"
+        android:backgroundTint="@color/grison"
+        android:text="@string/agregar_imagenes"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_confirm_register_obj_per"
+        app:layout_constraintStart_toStartOf="@+id/titulo_reg_obj_per"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fecha_upd_op" />
+
+
+    <Button
+        android:id="@+id/btn_confirm_register_obj_per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/confirmar_rop"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_img_arop" />
+
+    <Button
+        android:id="@+id/btn_cancel_uop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/rojo"
+        android:textColor="@color/white"
+        android:text="Cancelar"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_confirm_register_obj_per"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/cv_img_rep_p"
+        app:layout_constraintStart_toStartOf="@+id/add_img_arop"
+        app:layout_constraintTop_toBottomOf="@+id/add_img_arop">
+
+        <ImageView
+            android:id="@+id/img_rep_p"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="imagen de objeto"
+            android:src="@drawable/img2_lb_oe"
+            android:background="@color/beige"/>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

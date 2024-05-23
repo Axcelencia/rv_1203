@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_cielito"
+    tools:context=".Registrar_usuario">
+
+    <TextView
+        android:id="@+id/titulo_reg_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/titulo_aru"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/lightblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/edittext_email_signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_border"
+        android:inputType="textPersonName"
+        android:hint="  Correo Institucional"
+        app:layout_constraintStart_toStartOf="@+id/titulo_reg_user"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_reg_user"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/edittext_clave_signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_border"
+        android:inputType="textEmailAddress"
+        android:textSize="18dp"
+        android:hint="  Contraseña"
+        app:layout_constraintStart_toStartOf="@+id/edittext_email_signin"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_email_signin"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edittext_comfirmar_clave_signin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_border"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:hint="  Confirmar contraseña"
+        app:layout_constraintStart_toStartOf="@+id/edittext_clave_signin"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_clave_signin"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/volver_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver_a_inicio"
+        android:textColorLink="@color/lightblue"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_confirm_register" />
+
+    <Button
+        android:id="@+id/btn_confirm_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/lightblue"
+        android:text="@string/confirmar_reg"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

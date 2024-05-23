@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_cielito"
+    tools:context=".Registrar_objeto_perdido">
+
+    <TextView
+        android:id="@+id/titulo_reg_obj_per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/titulo_aro"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:textColor="@color/lightblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre_reg_obj"
+        android:text="@string/nombreObj_aro"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/lightblue"
+        app:layout_constraintStart_toStartOf="@+id/titulo_reg_obj_per"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_reg_obj_per"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edittext_nombre_obj_per"
+        android:background="@color/beige"
+        android:inputType="text"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/nombre_reg_obj"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_reg_obj"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha_reg_obj"
+        android:text="@string/fecha_rep_aro"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/lightblue"
+        app:layout_constraintStart_toStartOf="@+id/nombre_reg_obj"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_nombre_obj_per"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edittext_fecha_obj_per"
+        android:textSize="18sp"
+        android:inputType="date"
+        android:background="@color/beige"
+        app:layout_constraintStart_toStartOf="@+id/fecha_reg_obj"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_reg_obj"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lugar_reg_obj_per"
+        android:text="@string/lugar_aro"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/lightblue"
+        app:layout_constraintStart_toStartOf="@+id/fecha_reg_obj"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_fecha_obj_per"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edittext_lugar_obj_per"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:background="@color/beige"
+        app:layout_constraintStart_toStartOf="@+id/lugar_reg_obj_per"
+        app:layout_constraintTop_toBottomOf="@+id/lugar_reg_obj_per"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detalles_reg_obj_per"
+        android:text="@string/detalles_rep_aro"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/lightblue"
+        app:layout_constraintStart_toStartOf="@+id/lugar_reg_obj_per"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_lugar_obj_per"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/edittext_detalles_obj_per"
+        android:inputType="text"
+        android:textSize="18sp"
+        android:background="@color/beige"
+        app:layout_constraintStart_toStartOf="@+id/detalles_reg_obj_per"
+        app:layout_constraintTop_toBottomOf="@+id/detalles_reg_obj_per"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_img_aro"
+        android:text="@string/agregar_imagenes"
+        android:textSize="20dp"
+        android:backgroundTint="@color/grison"
+        app:layout_constraintStart_toStartOf="@id/detalles_reg_obj_per"
+        app:layout_constraintBottom_toTopOf="@id/btn_confirm_register_obj_per"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_rop"
+        android:id="@+id/btn_confirm_register_obj_per"
+        android:textSize="20dp"
+        android:backgroundTint="@color/lightblue"
+        app:layout_constraintStart_toStartOf="@id/detalles_reg_obj_per"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
